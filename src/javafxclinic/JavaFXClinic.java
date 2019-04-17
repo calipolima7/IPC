@@ -19,7 +19,7 @@ public class JavaFXClinic extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLClinic.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLelegir.fxml"));
         
         Scene scene = new Scene(root);
         
