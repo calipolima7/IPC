@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxclinic.FXMLcitasController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Citas">
+               <font>
+                  <Font name="Serif Regular" size="23.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="100.0" top="25.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="76.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="añadirCita" mnemonicParsing="false" prefHeight="26.0" prefWidth="67.0" text="Añadir...">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="eliminarCita" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Eliminar...">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="detallesCita" mnemonicParsing="false" prefHeight="26.0" prefWidth="69.0" text="Detalles">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tablaCita" prefHeight="200.0" prefWidth="510.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="DÍA" />
+                <TableColumn prefWidth="75.0" text="HORA" />
+                  <TableColumn prefWidth="75.0" text="PACIENTE" />
+                  <TableColumn prefWidth="75.0" text="DOCTOR" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
